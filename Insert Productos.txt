@@ -1,0 +1,42 @@
+-EN CASO DE NO TENER BASE DE DATOS CREARLA CON LA INTERFAZ GRAFICA DE POSTGRESQL O LA CONSOLA-
+-QUERY: CREATE DATABASE "NOMBRE"- 
+-INSERT DE LOS DATOS CON LOS QUE PROBE EL FUNCIONAMIENTO DE PRODUCTOS-
+
+INSERT INTO public."Producto" 
+(codigo, nombre, descripcion, precio, stock, "categoriaId") 
+VALUES
+('PAN001', 'Pan Baguette', 'Pan estilo francés crujiente', 1200, 50, 1),
+('PAN002', 'Pan Integral', 'Pan con harina integral 100%', 1500, 40, 1),
+('PAN003', 'Pan de Molde', 'Pan de molde blanco clásico', 1300, 60, 1),
+('PAN004', 'Pan Amasado', 'Pan tradicional chileno amasado a mano', 1000, 70, 1),
+('PAN005', 'Pan de Queso', 'Pan relleno con queso derretido', 1800, 30, 1),
+
+('LIC001', 'Vino Tinto Merlot', 'Vino seco de uva Merlot', 4500, 25, 2),
+('LIC002', 'Cerveza Lager', 'Cerveza rubia artesanal', 1800, 100, 2),
+('LIC003', 'Pisco Reservado', 'Pisco chileno con 40° de alcohol', 7000, 15, 2),
+('LIC004', 'Ron Oscuro', 'Ron caribeño añejado', 6200, 20, 2),
+('LIC005', 'Whisky Escocés', 'Whisky importado 12 años', 12000, 10, 2),
+
+('SNK001', 'Papas Fritas Clásicas', 'Bolsa de papas fritas saladas', 900, 80, 3),
+('SNK002', 'Maní con Sal', 'Snack de maní tostado con sal', 1100, 70, 3),
+('SNK003', 'Galletas de Chocolate', 'Galletas dulces con chips de chocolate', 1500, 50, 3),
+('SNK004', 'Barra de Cereal', 'Barra energética de avena y miel', 1300, 60, 3),
+('SNK005', 'Mix de Frutos Secos', 'Mezcla de nueces, almendras y pasas', 2500, 40, 3),
+
+('BEB001', 'Cola 350ml', 'Bebida carbonatada sabor cola', 800, 100, 4),
+('BEB002', 'Sprite 500ml', 'Bebida gaseosa sabor limón', 900, 90, 4),
+('BEB003', 'Tónica 330ml', 'Agua tónica carbonatada', 1000, 40, 4),
+('BEB004', 'Agua Mineral con Gas', 'Agua mineral levemente gasificada', 950, 60, 4),
+('BEB005', 'Energética 500ml', 'Bebida energética alta en cafeína', 1500, 35, 4),
+
+('JUG001', 'Jugo de Naranja', 'Jugo natural sin azúcar añadida', 1200, 70, 5),
+('JUG002', 'Jugo de Mango', 'Jugo de mango con pulpa natural', 1300, 60, 5),
+('JUG003', 'Jugo Multifruta', 'Mezcla de frutas tropicales', 1400, 50, 5),
+('JUG004', 'Jugo de Piña', 'Jugo de piña exprimido', 1250, 55, 5),
+('JUG005', 'Jugo de Manzana', 'Jugo clarificado de manzana', 1100, 65, 5),
+
+('PAN006', 'Pan de Campo', 'Pan rústico horneado a leña', 1400, 45, 1),
+('LIC006', 'Cerveza IPA', 'Cerveza artesanal con lúpulo intenso', 2000, 50, 2),
+('SNK006', 'Chocolate Amargo', 'Chocolate 70% cacao', 1700, 40, 3),
+('BEB006', 'Cola Zero 350ml', 'Bebida sin azúcar sabor cola', 850, 85, 4),
+('JUG006', 'Jugo de Frutilla', 'Jugo natural de frutilla fresca', 1350, 45, 5);

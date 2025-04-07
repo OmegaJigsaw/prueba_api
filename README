@@ -1,0 +1,27 @@
+---
+Postulante: Miguel Acum
+---
+
+---
+
+INSTUCCIONES
+
+Esta api trabaja con express por lo que requiere la instalacion de node.js en el dispositivo
+
+Instalación de dependencias
+pnpm install
+
+Creacion BD PostgresSQL
+create database pt_backend (Este es el nombre que le puse en local)
+
+Modificar el archivo .env con los datos de conexion a bd (USER, PASSWORD, DATABASE)
+que posean, tambien esta el puerto en el que corre el server como APP_PORT
+
+Migraciones para la creación de tablas de la bd desde terminal (vscode) una vez creada la BD
+(pedirá el nombre de la migracion)
+npx prisma migrate dev
+
+Arranque del server
+pnpm run dev
+
+---
