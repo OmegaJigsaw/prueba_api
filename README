@@ -14,8 +14,16 @@ pnpm install
 Creacion BD PostgresSQL
 create database pt_backend (Este es el nombre que le puse en local)
 
-Modificar el archivo .env con los datos de conexion a bd (USER, PASSWORD, DATABASE)
-que posean, tambien esta el puerto en el que corre el server como APP_PORT
+Modificar o crear el archivo .env con los datos de conexion a bd (USER, PASSWORD, DATABASE)
+que posean, tambien esta el puerto en el que corre el server como APP_PORT, de esta manera:
+
+# Ejemplo de url para coneccion db
+# APP_PORT = 8000
+# DATABASE_URL="postgresql://user:password@localhost:5432/database?schema=public"
+
+CONFIGURACION INICIAL DE PRISMA
+Luego de instalar depencias en la terminal ejecutar la sgte linea para cargarle las variables de entorno a prisma:
+npx prisma generate
 
 Migraciones para la creación de tablas de la bd desde terminal (vscode) una vez creada la BD
 (pedirá el nombre de la migracion)
